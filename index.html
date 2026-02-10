@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FinPay Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>💳 FinPay</h2>
+        <span>AI Finance Dashboard</span>
+    </nav>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Left Panel -->
+        <section class="panel">
+
+            <h3>📥 Income & Expenses</h3>
+
+            <label>Salary</label>
+            <input type="number" id="salary" placeholder="₹ Monthly Salary">
+
+            <label>Fixed Expenses</label>
+            <input type="number" id="fixed" placeholder="₹ Rent, EMI">
+
+            <label>Variable Expenses</label>
+            <input type="number" id="variable" placeholder="₹ Food, Travel">
+
+            <label>Gold Price Today</label>
+            <input type="number" id="todayGold" placeholder="₹ per gram">
+
+            <label>Last Month Gold Price</label>
+            <input type="number" id="lastGold" placeholder="₹ per gram">
+
+            <button onclick="runFinPayAI()">
+                <i class="fa-solid fa-robot"></i> Run AI Analysis
+            </button>
+
+        </section>
+
+        <!-- Right Panel -->
+        <section class="panel result-panel">
+
+            <h3>📊 AI Financial Report</h3>
+
+            <div id="result" class="result-box">
+                Enter details and run AI analysis.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 FinPay | Smart Finance System
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
