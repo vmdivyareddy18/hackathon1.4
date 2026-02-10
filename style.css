@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: #f1f4fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #0b3c91;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+/* Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Panels */
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.panel h3 {
+    margin-top: 0;
+}
+
+/* Inputs */
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #0b3c91, #1a73e8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Result */
+.result-box {
+    background: #f7f9ff;
+    border-left: 5px solid #1a73e8;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 250px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 12px;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
